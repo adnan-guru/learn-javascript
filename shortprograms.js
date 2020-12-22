@@ -59,15 +59,15 @@
 //     the formula heighInCentimeters = 2.54 * height, console the output. 
     
 
-var height = prompt("enter height");
-var centimeters = 2.54 * parseInt(height);
-var result = centimeters;
-console.log("Result is",result)
+// var height = prompt("enter height");
+// var centimeters = 2.54 * parseInt(height);
+// var result = centimeters;
+// console.log("Result is",result)
 
 
 
 
-
+               //programe 5
 // let num =5;
 
 // let output = 0;
@@ -84,7 +84,12 @@ console.log("Result is",result)
 //   console.log("number is odd")
 // }
 
+          //programe 6
+// var num = prompt("enter number for the table");
+// for (j = 1; j <= 10; j++){
+//      document.write(num + "*" + j + "=" + num * j + "<br>");
 
+// }
 
 
 
