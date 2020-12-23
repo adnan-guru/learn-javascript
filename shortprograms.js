@@ -5,7 +5,7 @@
 
 // 3.  write a program that inputs marks of three subjects.if the average of marks is more than 80,it displays
 // message "you are above standard, Admission Granted!". 
-
+               //show in console
 // var input1 = parseInt(prompt("Enter Marks Subject 1 :"));
 // var input2 = parseInt(prompt("Enter Marks Subject 2 :"));
 // var input3 = parseInt(prompt("Enter Marks Subject 3 :"));
@@ -22,6 +22,23 @@
 //     console.log("you are fail")
 
 //}
+                    //show in browser
+// var subject1 = parseInt(prompt("Enter Marks Subject 1 :"));
+// var subject2 = parseInt(prompt("Enter Marks Subject 2 :"));
+// var subject3 = parseInt(prompt("Enter Marks Subject 3 :"));  
+//  var result = ((subject1 + subject2 + subject3) / 3).toFixed(2);
+
+// document.getElementById("demo1").innerHTML= `Marks are Subject 1 is: ${subject1}</br> Marks are Subject 2 is:
+// ${subject2}<br> Marks are Subject 3 is: ${subject3}`;
+
+// document.getElementById("demo2").innerHTML= `averge is : ${result} %`;
+
+// if (result >= 80) {
+       
+//      document.getElementById("demo3").innerHTML= `you are above standard, Admission Granted!`;
+// }else{
+//      document.getElementById("demo4").innerHTML= `you are fail !`;
+// };
 
                                        //programe 2
 
@@ -52,8 +69,6 @@
 
 
                                          //   programe 4
-
-
 
 // 2.  write a javascript program that gets person height from user in inches and convert it into centimeters using
 //     the formula heighInCentimeters = 2.54 * height, console the output. 
