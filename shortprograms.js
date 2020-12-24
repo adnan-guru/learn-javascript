@@ -108,6 +108,43 @@
 
 
 
+            // programe 7
+// var num1 = parseInt(prompt("Enter Number 1"));
+// var num2 = parseInt(prompt("Enter Number 2"));
+// var num3 = parseInt(prompt("Enter Number 3"));
+// var output = num1 + num2 + num3;
+// document.write("number 1 is :", num1 + "<br />")
+// document.write("number 2 is :", num2 + "<br />")
+// document.write("number 3 is :", num3 + "<br />")
+// document.write("total sum is :", output)
+
+                  //programe 8
+
+// var rows = prompt("How many rows for your multiplication table?");
+// var cols = prompt("How many columns for your multiplication table?");
+// if(rows == "" || rows == null)
+//           rows = 10;
+// if(cols== "" || cols== null)
+//           cols = 10;
+// createTable(rows, cols);
+// function createTable(rows, cols)
+// {
+//   var j=1;
+//   var output = "<table border='1' width='50%' cellspacing='0'cellpadding='20'>";
+//   for(i=1;i<=rows;i++)
+//   {
+//      output = output + "<tr>";
+//     while(j<=cols)
+//     {
+//           output = output + "<td>" + i*j + "</td>";
+//            j = j+1;
+//          }
+//           output = output + "</tr>";
+//           j = 1;
+// }
+// output = output + "</table>";
+// document.write(output);
+// }
 
 
 
