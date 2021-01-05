@@ -191,28 +191,33 @@
 // 	}
 //   };
 
-
+       //programe 10
 //write a java script programe to get user section and alert ection timing
 
-var userSection = prompt('Enter Your Section')
-switch (userSection) {
-    case "A": {
-        alert('Your clas timing is 5pm to 7pm')
-        break;
-    }
-    case "B": {
-        alert('Your clas timing is 7pm to 9pm')
-        break;
-    }
-    case "C": {
-        alert('Your clas timing is 9pm to 11pm')
-        break;
-    }
-    case "D": {
-        alert('Your clas timing is 11pm to 1pm')
-        break;
-    }
-    default:
-        break;
-        alert('You are not enroll')
-}
+// var userSection = prompt('Enter Your Section')
+// switch (userSection) {
+//     case "A": {
+//         alert('Your clas timing is 5pm to 7pm')
+//         break;
+//     }
+//     case "B": {
+//         alert('Your clas timing is 7pm to 9pm')
+//         break;
+//     }
+//     case "C": {
+//         alert('Your clas timing is 9pm to 11pm')
+//         break;
+//     }
+//     case "D": {
+//         alert('Your clas timing is 11pm to 1pm')
+//         break;
+//     }
+//     default:
+//         alert('You are not enroll')
+//         break;
+// }
+// function onClickHandler() {
+//        var userName = document.getElementById("userName").value;
+//        var output = `Welcom to ${userName}!`
+//        document.getElementById("output").innerHTML= output;
+//    }
