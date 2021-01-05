@@ -1,11 +1,11 @@
 
 
 
-                                 //   program 1
+//   program 1
 
 // 3.  write a program that inputs marks of three subjects.if the average of marks is more than 80,it displays
 // message "you are above standard, Admission Granted!". 
-               //show in console
+//show in console
 // var input1 = parseInt(prompt("Enter Marks Subject 1 :"));
 // var input2 = parseInt(prompt("Enter Marks Subject 2 :"));
 // var input3 = parseInt(prompt("Enter Marks Subject 3 :"));
@@ -22,7 +22,7 @@
 //     console.log("you are fail")
 
 //}
-                    //show in browser
+//show in browser
 // var subject1 = parseInt(prompt("Enter Marks Subject 1 :"));
 // var subject2 = parseInt(prompt("Enter Marks Subject 2 :"));
 // var subject3 = parseInt(prompt("Enter Marks Subject 3 :"));  
@@ -34,25 +34,25 @@
 // document.getElementById("demo2").innerHTML= `averge is : ${result} %`;
 
 // if (result >= 80) {
-       
+
 //      document.getElementById("demo3").innerHTML= `you are above standard, Admission Granted!`;
 // }else{
 //      document.getElementById("demo4").innerHTML= `you are fail !`;
 // };
 
-                                       //programe 2
+//programe 2
 
-  //  1.  write a javascript program that gets temperature from user in celsius and convert it into Fahrenheit using the
-   //  formula F = 9/5 * C + 32, alert the output.
+//  1.  write a javascript program that gets temperature from user in celsius and convert it into Fahrenheit using the
+//  formula F = 9/5 * C + 32, alert the output.
 
-            //   var celsius = prompt("Enter a celsius value: ");
-            //   var fahrenheit = (9/5 * celsius) + 32
-            //   var result = fahrenheit ;
-            //   console.log("Fahrenheight :",result)
-        
+//   var celsius = prompt("Enter a celsius value: ");
+//   var fahrenheit = (9/5 * celsius) + 32
+//   var result = fahrenheit ;
+//   console.log("Fahrenheight :",result)
 
 
-                                        // programe 3
+
+// programe 3
 
 //4. write a javascript program that inputs a number from the user and check whether it is prime number or not.
 // Assignment Requirement: 
@@ -65,14 +65,14 @@
 // else{
 //       console.log("number is odd")
 //   }
-      
 
 
-                                         //   programe 4
+
+//   programe 4
 
 // 2.  write a javascript program that gets person height from user in inches and convert it into centimeters using
 //     the formula heighInCentimeters = 2.54 * height, console the output. 
-    
+
 
 // var height = prompt("enter height");
 // var centimeters = 2.54 * parseInt(height);
@@ -82,7 +82,7 @@
 
 
 
-               //programe 5
+//programe 5
 // let num =5;
 
 // let output = 0;
@@ -99,7 +99,7 @@
 //   console.log("number is odd")
 // }
 
-          //programe 6
+//programe 6
 // var num = prompt("enter number for the table");
 // for (j = 1; j <= 10; j++){
 //      document.write(num + "*" + j + "=" + num * j + "<br>");
@@ -108,7 +108,7 @@
 
 
 
-            // programe 7
+// programe 7
 // var num1 = parseInt(prompt("Enter Number 1"));
 // var num2 = parseInt(prompt("Enter Number 2"));
 // var num3 = parseInt(prompt("Enter Number 3"));
@@ -118,7 +118,7 @@
 // document.write("number 3 is :", num3 + "<br />")
 // document.write("total sum is :", output)
 
-                  //programe 8
+//programe 8
 
 // var rows = prompt("How many rows for your multiplication table?");
 // var cols = prompt("How many columns for your multiplication table?");
@@ -146,92 +146,73 @@
 // document.write(output);
 // }
 
+
+// var userName = prompt('Enter Your Name');
+// if (userName == "Adnan") {
+//     alert('welcom to Adnan')
+// } else {
+//     alert('Name is not Adnan')
+// }
+
 // Get all the keys from document
-var keys = document.querySelectorAll('#calculator span');
-var operators = ['+', '-', 'x', '÷'];
-var decimalAdded = false;
 
-// Add onclick event to all the keys and perform operations
-for(var i = 0; i < keys.length; i++) {
-	keys[i].onclick = function(e) {
-		// Get the input and button values
-		var input = document.querySelector('.screen');
-		var inputVal = input.innerHTML;
-		var btnVal = this.innerHTML;
-		
-		// Now, just append the key values (btnValue) to the input string and finally use javascript's eval function to get the result
-		// If clear key is pressed, erase everything
-		if(btnVal == 'C') {
-			input.innerHTML = '';
-			decimalAdded = false;
-		}
-		
-		// If eval key is pressed, calculate and display the result
-		else if(btnVal == '=') {
-			var equation = inputVal;
-			var lastChar = equation[equation.length - 1];
-			
-			// Replace all instances of x and ÷ with * and / respectively. This can be done easily using regex and the 'g' tag which will replace all instances of the matched character/substring
-			equation = equation.replace(/x/g, '*').replace(/÷/g, '/');
-			
-			// Final thing left to do is checking the last character of the equation. If it's an operator or a decimal, remove it
-			if(operators.indexOf(lastChar) > -1 || lastChar == '.')
-				equation = equation.replace(/.$/, '');
-			
-			if(equation)
-				input.innerHTML = eval(equation);
-				
-			decimalAdded = false;
-		}
-		
-		// Basic functionality of the calculator is complete. But there are some problems like 
-		// 1. No two operators should be added consecutively.
-		// 2. The equation shouldn't start from an operator except minus
-		// 3. not more than 1 decimal should be there in a number
-		
-		// We'll fix these issues using some simple checks
-		
-		// indexOf works only in IE9+
-		else if(operators.indexOf(btnVal) > -1) {
-			// Operator is clicked
-			// Get the last character from the equation
-			var lastChar = inputVal[inputVal.length - 1];
-			
-			// Only add operator if input is not empty and there is no operator at the last
-			if(inputVal != '' && operators.indexOf(lastChar) == -1) 
-				input.innerHTML += btnVal;
-			
-			// Allow minus if the string is empty
-			else if(inputVal == '' && btnVal == '-') 
-				input.innerHTML += btnVal;
-			
-			// Replace the last operator (if exists) with the newly pressed operator
-			if(operators.indexOf(lastChar) > -1 && inputVal.length > 1) {
-				// Here, '.' matches any character while $ denotes the end of string, so anything (will be an operator in this case) at the end of string will get replaced by new operator
-				input.innerHTML = inputVal.replace(/.$/, btnVal);
-			}
-			
-			decimalAdded =false;
-		}
-		
-		// Now only the decimal problem is left. We can solve it easily using a flag 'decimalAdded' which we'll set once the decimal is added and prevent more decimals to be added once it's set. It will be reset when an operator, eval or clear key is pressed.
-		else if(btnVal == '.') {
-			if(!decimalAdded) {
-				input.innerHTML += btnVal;
-				decimalAdded = true;
-			}
-		}
-		
-		// if any other key is pressed, just append it
-		else {
-			input.innerHTML += btnVal;
-		}
-		
-		// prevent page jumps
-		e.preventDefault();
-	} 
+// window.onload = function () {
+// 	var buttons = document.getElementsByTagName('span'),
+// 		result = document.querySelectorAll('.result p')[0],
+// 		clear = document.getElementsByClassName('clear')[0];
+
+// 	for (var i = 0; i < buttons.length; i++) {
+// 	  if (buttons[i].innerHTML === '=') {
+// 		buttons[i].addEventListener("click", calculate(i));
+// 	  } else {
+// 		buttons[i].addEventListener("click", addValue(i));
+// 	  }
+// 	}
+
+// 	clear.onclick = function () {
+// 	  result.innerHTML = '';
+// 	};  
+
+// 	function addValue(i) {
+// 	  return function () {
+
+// 		  result.innerHTML += buttons[i].innerHTML;
+
+// 	  };
+// 	}
+
+// 	function calculate(i) {
+// 	  return function () {
+// 			  var final_res = result.innerHTML;
+
+
+// 		result.innerHTML = eval(final_res);
+// 	  };
+// 	}
+//   };
+
+
+//write a java script programe to get user section and alert ection timing
+
+var userSection = prompt('Enter Your Section')
+switch (userSection) {
+    case "A": {
+        alert('Your clas timing is 5pm to 7pm')
+        break;
+    }
+    case "B": {
+        alert('Your clas timing is 7pm to 9pm')
+        break;
+    }
+    case "C": {
+        alert('Your clas timing is 9pm to 11pm')
+        break;
+    }
+    case "D": {
+        alert('Your clas timing is 11pm to 1pm')
+        break;
+    }
+    default:
+        break;
+        alert('You are not enroll')
 }
-
-
-
-
