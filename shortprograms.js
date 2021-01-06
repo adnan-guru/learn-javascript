@@ -221,3 +221,10 @@
 //        var output = `Welcom to ${userName}!`
 //        document.getElementById("output").innerHTML= output;
 //    }
+
+// calculater
+
+// function onClickHandler(num) {
+//        var output = document.getElementById("output").value;
+//        document.getElementById("output").value = output + num
+//     }

@@ -9,33 +9,29 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
  </head>
 <body> 
-	<input type="text" name="name"  id="userName">
-	<button onclick={onClickHandler()}>submit</button>
-	<h3 id="output">Output</h3>
-				  <!-- <div id="calculator">
-					<div class="result"><p></p></div>
-					<div class="clear">C</div>
-				 
-					<span>7</span>
-					<span>8</span>
-					<span>9</span>
-					<span>+</span>
-				 
-					<span>4</span>
-					<span>5</span>
-					<span>6</span>
-					<span>-</span>
-				 
-					<span>1</span>
-					<span>2</span>
-					<span>3</span>
-					<span>/</span>
-				 
-					<span>0</span>
-					<span>.</span>
-					<span>=</span>
-					<span>*</span>
-				  </div> -->
+	<div class="calculator card">
+        <input type="text" id="output" class="calculator-screen " value=""  />
+        <div class="calculator-keys">
+          <button onclick="onClickHandler('+')" type="button" class="operator btn btn-primary" value="+">+</button>
+          <button onclick="onClickHandler('-')"  type="button" class="operator btn btn-primary" value="-">-</button>
+          <button onclick="onClickHandler('*')" type="button" class="operator btn btn-primary" value="*">&times;</button>
+          <button onclick="onClickHandler('/')" type="button" class="operator btn btn-primary" value="/">&divide;</button>
+          <button onclick="onClickHandler(7)" type="button" value="7" class="btn btn-light ">7</button>
+          <button onclick="onClickHandler(8)" type="button" value="8" class="btn btn-light ">8</button>
+          <button onclick="onClickHandler(9)" type="button" value="9" class="btn btn-light ">9</button>
+          <button onclick="onClickHandler(4)" type="button" value="4" class="btn btn-light ">4</button>
+          <button onclick="onClickHandler(5)" type="button" value="5" class="btn btn-light ">5</button>
+          <button onclick="onClickHandler(6)" type="button" value="6" class="btn btn-light ">6</button>
+          <button onclick="onClickHandler(1)" value="1" class="btn btn-light ">1</button>
+          <button onclick="onClickHandler(2)"  type="button" value="2" class="btn btn-light ">2</button>
+          <button onclick="onClickHandler(3)" type="button" value="3" class="btn btn-light ">3</button>
+          <button onclick="onClickHandler(0)" type="button" value="0" class="btn btn-light ">0</button>
+          <button onclick="onClickHandler('.')" type="button" class="decimal function btn btn-secondary" value=".">.</button>
+          <button onclick="onClickHandler('AC')" type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear">AC</button>
+          <button onclick="onClickHandler('=')" type="button" class="equal-sign operator btn btn-danger" value="=">=</button>
+        </div>
+      </div>
+
 				  <script src="shortprograms.js"></script>
 
 </body>
