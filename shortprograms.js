@@ -228,3 +228,7 @@
 //        var output = document.getElementById("output").value;
 //        document.getElementById("output").value = output + num
 //     }
+
+// function allClear() {
+//        document.getElementById("output").value = "";
+//     }

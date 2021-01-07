@@ -9,28 +9,37 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
  </head>
 <body> 
-	<div class="calculator card">
-        <input type="text" id="output" class="calculator-screen " value=""  />
-        <div class="calculator-keys">
-          <button onclick="onClickHandler('+')" type="button" class="operator btn btn-primary" value="+">+</button>
-          <button onclick="onClickHandler('-')"  type="button" class="operator btn btn-primary" value="-">-</button>
-          <button onclick="onClickHandler('*')" type="button" class="operator btn btn-primary" value="*">&times;</button>
-          <button onclick="onClickHandler('/')" type="button" class="operator btn btn-primary" value="/">&divide;</button>
-          <button onclick="onClickHandler(7)" type="button" value="7" class="btn btn-light ">7</button>
-          <button onclick="onClickHandler(8)" type="button" value="8" class="btn btn-light ">8</button>
-          <button onclick="onClickHandler(9)" type="button" value="9" class="btn btn-light ">9</button>
-          <button onclick="onClickHandler(4)" type="button" value="4" class="btn btn-light ">4</button>
-          <button onclick="onClickHandler(5)" type="button" value="5" class="btn btn-light ">5</button>
-          <button onclick="onClickHandler(6)" type="button" value="6" class="btn btn-light ">6</button>
-          <button onclick="onClickHandler(1)" value="1" class="btn btn-light ">1</button>
-          <button onclick="onClickHandler(2)"  type="button" value="2" class="btn btn-light ">2</button>
-          <button onclick="onClickHandler(3)" type="button" value="3" class="btn btn-light ">3</button>
-          <button onclick="onClickHandler(0)" type="button" value="0" class="btn btn-light ">0</button>
-          <button onclick="onClickHandler('.')" type="button" class="decimal function btn btn-secondary" value=".">.</button>
-          <button onclick="onClickHandler('AC')" type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear">AC</button>
-          <button onclick="onClickHandler('=')" type="button" class="equal-sign operator btn btn-danger" value="=">=</button>
-        </div>
-      </div>
+  <div class="calculator card" >
+    <form name="forms">
+    <input type="text" id="output" name="answer" class="calculator-screen " value="" />
+    <div class="calculator-keys">
+      <button onclick="forms.answer.value += '+'" id="plus" type="button" value="+" class="operator btn btn-primary">+</button>
+      <button onclick="forms.answer.value += '-'" type="button" value="-" class="operator btn btn-primary">-</button>
+      <button onclick="forms.answer.value += '*'" type="button" value="*" class="operator btn btn-primary">x</button>
+      <button onclick="forms.answer.value += '/'" type="button" value="/" class="operator btn btn-primary">/</button>
+
+      <button onclick="forms.answer.value += '7'" type="button" value="7" class="btn btn-warning ">7</button>
+      <button onclick="forms.answer.value += '8'" type="button" value="8" class="btn btn-warning ">8</button>
+      <button onclick="forms.answer.value += '9'" type="button" value="9" class="btn btn-warning ">9</button>
+
+      <button onclick="forms.answer.value += '4'" type="button" value="4" class="btn btn-warning ">4</button>
+      <button onclick="forms.answer.value += '5'" type="button" value="5" class="btn btn-warning ">5</button>
+      <button onclick="forms.answer.value += '6'" type="button" value="6" class="btn btn-warning ">6</button>
+
+      <button onclick="forms.answer.value += '1'" type="button" value="1" class="btn btn-warning ">1</button>
+      <button onclick="forms.answer.value += '2'" type="button" value="2" class="btn btn-warning ">2</button>
+      <button onclick="forms.answer.value += '3'" type="button" value="3" class="btn btn-warning ">3</button>
+
+      <button onclick="forms.answer.value += '0'" type="button" value="0" class="btn btn-warning ">0</button>
+      <button onclick="forms.answer.value += '.'" type="button" value="."
+        class="decimal function btn btn-secondary">.</button>
+      <button onclick="allClear()" type="button" value="all-clear"
+        class="all-clear function btn btn-danger btn-sm">AC</button>
+      <button onclick="forms.answer.value = eval(forms.answer.value)"  type="button" value="="
+        class="equal-sign operator btn btn-danger">=</button>
+      </form>
+  </div>
+</div>
 
 				  <script src="shortprograms.js"></script>
 
