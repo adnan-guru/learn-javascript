@@ -5,7 +5,7 @@
 
 // 3.  write a program that inputs marks of three subjects.if the average of marks is more than 80,it displays
 // message "you are above standard, Admission Granted!". 
-//show in console
+// show in console
 // var input1 = parseInt(prompt("Enter Marks Subject 1 :"));
 // var input2 = parseInt(prompt("Enter Marks Subject 2 :"));
 // var input3 = parseInt(prompt("Enter Marks Subject 3 :"));
@@ -21,8 +21,8 @@
 // } else {
 //     console.log("you are fail")
 
-//}
-//show in browser
+// }
+// show in browser
 // var subject1 = parseInt(prompt("Enter Marks Subject 1 :"));
 // var subject2 = parseInt(prompt("Enter Marks Subject 2 :"));
 // var subject3 = parseInt(prompt("Enter Marks Subject 3 :"));  
@@ -40,7 +40,7 @@
 //      document.getElementById("demo4").innerHTML= `you are fail !`;
 // };
 
-//programe 2
+// programe 2
 
 //  1.  write a javascript program that gets temperature from user in celsius and convert it into Fahrenheit using the
 //  formula F = 9/5 * C + 32, alert the output.
@@ -54,7 +54,7 @@
 
 // programe 3
 
-//4. write a javascript program that inputs a number from the user and check whether it is prime number or not.
+// 4. write a javascript program that inputs a number from the user and check whether it is prime number or not.
 // Assignment Requirement: 
 // var number = prompt("enter a number");
 // var num =  parseInt(number);
@@ -82,7 +82,7 @@
 
 
 
-//programe 5
+// programe 5
 // let num =5;
 
 // let output = 0;
@@ -99,7 +99,7 @@
 //   console.log("number is odd")
 // }
 
-//programe 6
+// programe 6
 // var num = prompt("enter number for the table");
 // for (j = 1; j <= 10; j++){
 //      document.write(num + "*" + j + "=" + num * j + "<br>");
@@ -118,7 +118,7 @@
 // document.write("number 3 is :", num3 + "<br />")
 // document.write("total sum is :", output)
 
-//programe 8
+// programe 8
 
 // var rows = prompt("How many rows for your multiplication table?");
 // var cols = prompt("How many columns for your multiplication table?");
@@ -191,8 +191,8 @@
 // 	}
 //   };
 
-       //programe 10
-//write a java script programe to get user section and alert ection timing
+//        programe 10
+// write a java script programe to get user section and alert ection timing
 
 // var userSection = prompt('Enter Your Section')
 // switch (userSection) {
