@@ -216,6 +216,67 @@ document.write(a + "<br>");*/
 
 
 
+          //Array Concepts
+// var student = ["Adnan","Umer","Tyyab","Asif","Zahid","Faizan"];
+// student [0] = "ferhan";
+// console.log("output is here",student[1]);
+// console.log("total arry",student);
+// alert(student[0])
+
+         //    Empty Array
+// var emptyArray =[];
+// console.log("Array is here", emptyArray);
+// emptyArray [0]= "Adnan";
+// emptyArray [1]= "zahid";
+// emptyArray [2]= "ali";
+// emptyArray [3]= "wajid";
+// emptyArray [4]= "asif";
+// console.log("Array is here" ,emptyArray);
+// console.log("Array is here" ,emptyArray[1]);
+
+//       //property for cheacking len of arr
+// var checkLength= emptyArray.length;
+// console.log("Length",checkLength);
+
+    //pop and push method
+
+    // var numArray =[1,2,3,4,5,6];
+    // console.log("number array is here",numArray);
+          // push > add value is last
+    // numArray.push(7);
+    // console.log("number array is here",numArray);
+         // pop > delete value last
+    // numArray.pop();
+    // console.log("number array is here",numArray);
+
+ //if we want to add a value start in array
+//  var array=[4,5,6]
+//  console.log("array is here",array);
+//       // push > add value is first
+//  array.unshift(1,2,3);
+//  console.log("array is here",array);
+//       // push > delete value is first
+//  array.shift();
+//  console.log("array is here",array);
+
+
+//how to add numer in specefic place
+// var numArray=[1,2,3,4,5,6];
+// console.log("array is here",numArray);
+// numArray.splice(4,2,7,8,9)
+// console.log("array is here",numArray);
+
+//cut a array and show another array
+// var cities=["fsd","lhr","karachi","hyd"]
+// console.log(cities);
+// var punCities= cities.slice(0,2)
+// console.log("punjab cities",punCities);
+// var sindhCities =cities.slice(2,4)
+// console.log("sindh citie is here",sindhCities);
+
+
+
+
 
 
 
