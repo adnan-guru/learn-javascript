@@ -276,6 +276,18 @@ document.write(a + "<br>");*/
 
 
 
+// function onSubmitHandler() {
+//   var userName = document.getElementById("username").value;
+//   var email = document.getElementById("email").value;
+//   var output = ""
+//   if (userName.indexOf(" ") != -1) {
+//      output = output + "<li>Required and must be length of 5 to 12<li>"
+//   }
+//   if (email.indexOf("@") == -1) {
+//      output = output + "<li>please add valid email<li>"
+//   }
+//   document.getElementById("errorList").innerHTML = output;
+// }
 
 
 
