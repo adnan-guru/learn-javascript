@@ -232,3 +232,35 @@
 // function allClear() {
 //        document.getElementById("output").value = "";
 //     }
+
+// function onSubmitHandler() {
+//     var userId = document.getElementById("userid").value;
+//     var password = document.getElementById("password").value;
+//     var name = document.getElementById("name").value;
+//     var email = document.getElementById("email").value;
+//     var option = document.getElementById("select").value;
+//     var zipCode = document.getElementById("zip").value;
+//     var output = ""
+//     if (userId.length < 5 || userId.length > 12) {
+//        output = output + "<li>User Id! Required and must be of length 5 to 12.<li>"
+//     }
+//     if (password.length < 7 || password.length > 12) {
+//        output = output + "<li>Password! Required and must be of length 7 to 12.<li>"
+//     }
+//     var letters = /^[A-Za-z]+$/;
+//     if (name.length != letters) {
+//        output = output + "<li>Name! Required and alphabates only.<li>"
+//     }
+//     if (email.indexOf("@") == -1) {
+//        output = output + "<li>please add valid email<li>"  
+//     }
+//     //var  numbers = /^[0-9]+$/;
+//     //var zipCode= numbers;
+//     if (zipCode == /^[A-Za-z]+$/ ) {
+//        output = output + "<li>please add number only<li>"    
+//     }
+//     if (option.indexOf(" ") != -1) {
+//        output = output + "<li>please select a country<li>"   
+//     }
+//     document.getElementById("errorList").innerHTML = output;
+//  }
