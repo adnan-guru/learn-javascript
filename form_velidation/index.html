@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" style="background-color: green;">
+        <h1 style="color: yellow;text-align: left;">Registration Form</h1>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label style="color: #fff;" for="">Email :</label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="col-md-6">
+                        <label style="color: #fff;" for="">Passworod :</label>
+                        <input class="form-control" type="password" name="email" id="password" placeholder="Password" />
+                    </div>
+                    <div class="col-md-6">
+                        <label style="color: #fff;" for="">Name :</label>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="col-md-6">
+                        <label style="color: #fff;" for="">User Id :</label>
+                        <input class="form-control" type="text" name="userid" id="userid" placeholder="User Id">
+                    </div>
+                    <div class="col-md-6">
+                        <label style="color: #fff;" for="">Country :</label>
+                        <select class="custom-select" id="select">
+                            <option value="">(Please select a country)</option>
+                            <option value="1">Pakistan</option>
+                            <option value="2">U.S.A</option>
+                            <option value="3">India</option>
+                            <option value="4">Iran</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label style="color: #fff;" for="">Zip code :</label>
+                        <input class="form-control" name="Zip" id="zip" placeholder="zip cod">
+                    </div>
+                    <div class="col-md-6">
+                        <label style="color: #fff;"  for="">Language :</label>
+                        <select class="custom-select" id="Language">
+                            <option value="">Select Language
+                            <option value="5"> English
+                            <option value="6">Non English
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label style="color: #fff;" for="">Gender :</label>
+                        <select class="custom-select" id="gender">
+                            <option value="">Select Gender
+                            <option value="5"> Mail
+                            <option value="6">Femail
+                        </select>
+                    </div>
+                    <div class="col-md-12">
+                        <label style="color: #fff;" for="">Address :</label>
+                        <input class="form-control" type="text" name="Address" id="address" placeholder="Address">
+                    </div>
+                    <div class="col-md-12">
+                        <label style="color: #fff;" for="">Commit :</label>
+                        <textarea class="form-control">
+                            commit here
+                          </textarea>
+                    </div>
+                </div>
+                <button style="margin-top:10px;margin-bottom:10px;align-items: center;" type="button" class="btn btn-primary" onclick="onSubmitHandler()">Submit</button>
+            </div>
+            <div class="col-md-4">
+                <ul style="color:RED; background-color: #fff; margin-top: 30px;font-size: medium;" id="errorList"></ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
