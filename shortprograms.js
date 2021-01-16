@@ -264,3 +264,31 @@
 //     }
 //     document.getElementById("errorList").innerHTML = output;
 //  }
+
+// //Round method
+// var num = 23.445667;
+// var round = Math.round(num);
+// console.log("Round is",round);
+
+// //Ceil method
+// var ceil = Math.ceil(num);
+// console.log(" Ceil is",ceil);
+
+// //Floor method
+// var floor = Math.floor(num);
+// console.log("Floor is",floor);
+
+// // Random number method
+// var randomNumber = Math.random();
+// console.log("Random Numer is",randomNumber);
+
+//  randomNumber = (randomNumber * 10)
+//  console.log("Random num * 10",randomNumber);
+//  randomNumber = Math.ceil(randomNumber)
+//  console.log("random num with ciel",randomNumber);
+
+
+//  //ToFixed method
+//  var number = 5.3456778;
+//  console.log("without fixed",number);
+//  console.log("to fixed is...",number.toFixed(1));
