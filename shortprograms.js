@@ -292,3 +292,17 @@
 //  var number = 5.3456778;
 //  console.log("without fixed",number);
 //  console.log("to fixed is...",number.toFixed(1));
+
+// show date/moments in js
+
+// var currentDate = new Date();
+// //alert(currentDate)
+// var theDay= currentDate.getDay() ;
+// console.log(theDay);
+// //show current user day
+// var days= ["sun","mon","tues","wed","thu","fri","sat"]
+// console.log("currunt day custom", days[theDay]);
+// //show current user month
+// var theMont=currentDate.getMonth();
+// var month=["jan","feb","march","april","may","jun","july","agust","sep","oct","nov","dec"];
+// console.log("current month custom is",month[theMont]);
