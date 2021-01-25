@@ -7,9 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>Start to learn todo application and apps...</h1>
+   <!-- <h1>Start to learn todo application and apps...</h1> -->
     
-
+   <table id="myTable" style="padding:8px;border:1px solid black">
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+  
+  <p>
+  <input type="button" value="Delete one Row"
+  onclick="document.getElementById('myTable').deleteRow(0)">
+  </p>
 
     <script src="script.js"></script>
 </body>
