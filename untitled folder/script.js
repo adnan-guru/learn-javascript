@@ -433,6 +433,24 @@
 //   alert("character is uppercase case");
 // }
 
+//Write a js program to check whether a character is integer or alphabet.
+
+// var number =parseInt(prompt("enter a number"));
+// if (number) {
+//     console.log("character is integer");
+// }else{
+//     console.log("character is alphabet");
+// }
+
+//Write a js program to check whether a character is special character or not.
+
+// var number = parseInt(prompt("enter a number"));
+// if (number) {
+//   console.log("integer! number is not a special character!");
+// } else{
+//   console.log("alphabet! number is not a special character");
+// }
+
 // var cityToCheck = prompt("Enter city");
 // //cityToCheck = cityToCheck.toLowerCase();
 // var cleanCities = ["United state", "uk", "Dubai", "paris", "hjkhkj", "jhgkhj"];
@@ -459,10 +477,174 @@
 // var newCh = upperCase + otherCh;
 // console.log("new ch", newCh);
 
-
 // var month = prompt("enter month");
 // var charMonth = month.length;
 // if (charMonth > 3) {
 //   var newCh = month.slice(0,3)
 //   console.log("month >",newCh);
 // }
+
+// var str = prompt("enter a number");
+// var num = str.length;
+// for (let i = 0; i < num.length; i++) {
+//   if (str.slice(i, i + 2) === "  ") {
+//     console.log("fdfsd",i);
+//     console.log("no double spece alowed");
+//   }
+
+//   break;
+// }
+
+//replace method
+// var text= "adnan";
+// var newText=text.replace("adnan","usman");
+// console.log("newText",newText);
+
+//Round ciel ,floor method
+
+// var num1= 1.56754634;
+// var num2 =Math.round(num1);
+// console.log('round',num2);
+// var num3 =Math.ceil(num1);
+// console.log("ciel",num3);
+// var num4=Math.floor(num1);
+// console.log("floor",num4);
+
+// var randoom = Math.random();
+// console.log("random",randoom*6+1);
+
+// var num = 2.5643;
+// var num2=num.toFixed(2);
+// var num3=num.toFixed();
+// console.log("num",num);
+// console.log("toFixed (2)",num2);
+// console.log("toFixed ()",num3);
+
+//java script date
+
+// var fullDate = new Date();
+// console.log("date---->", fullDate);
+// var day = fullDate.getDay();
+// console.log("day---->", day);
+
+// var dayNames=["sun","mon","tues","wed","thu","fri","sat"];
+// var now = new Date();
+// var theDay = now.getDay();
+// var nameOfToday= dayNames[theDay];
+// console.log("the day >",nameOfToday);
+
+// for (let i = 0; i < dayNames.length; i++) {
+//     console.log("array >",dayNames[i]);
+// }
+
+// var year = now.getFullYear();
+// console.log("get year>",year);
+// var hour= now.getHours();
+// console.log("hour >",hour);
+// var minute = now.getMinutes();
+// console.log("minute >",minute);
+// var month = now.getMonth();
+// console.log("month >",month);
+
+// var date = new Date();
+// console.log("new date >",date);
+// var endDate = new Date("JUNE 1, 2025");
+// console.log("end date",endDate);
+
+// var date = new Date ();
+// console.log("new date >",date);
+// var setDate = new Date("Feb 15, 2021 12:29:00")
+// console.log("set Time",setDate);
+
+// if (setDate < date) {
+//     alert("fsdfasdsa")
+// }
+
+//js function
+// function dataHandler(firstName, lastName) {
+//   console.log(`First Name: ${firstName} , Last Name : ${lastName}`);
+// }
+// dataHandler("Adnan","Muhammmad");
+
+// var sum;
+// function addNumbers() {
+//   sum = 2 + 2;
+// }
+// console.log("add numbers", addNumbers(sum));
+
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = "Sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case 6:
+//     day = "Saturday";
+// }
+// console.log("day", day);
+
+//write a java script programe to get user section and alert section timing
+// var rollNumber = parseInt(prompt("Enter your rool number"))
+// var userSection = prompt("Enter Your Section");
+// var lowerCase = userSection.toLowerCase();
+// switch (userSection || lowerCase ||rollNumber < 10) {
+//   case "A": {
+//     alert("Your class timing is 9am to 11am");
+//     break;
+//   }
+//   case "a": {
+//     alert("Your class timing is 9am to 11am");
+//     break;
+//   }
+//   case "B": {
+//     alert("Your class timing is 11am to 1pm");
+//     break;
+//   }
+//   case "b": {
+//     alert("Your class timing is 11am to 1pm");
+//     break;
+//   }
+//   case "C": {
+//     alert("Your class timing is 1pm to 3pm");
+//     break;
+//   }
+//   case "c": {
+//     alert("Your class timing is 1pm to 3pm");
+//     break;
+//   }
+//   case "D": {
+//     alert("Your class timing is 3pm to 5pm");
+//     break;
+//   }
+//   case "d": {
+//     alert("Your class timing is 3pm to 5pm");
+//     break;
+//   }
+//   default:
+//     alert("Enter valid section");
+//     break;
+// }
+
+var rollNumber = parseInt(prompt("Enter your roll number"));
+var userSection = prompt("Enter Your Section");
+
+if (rollNumber <= 10 && (userSection === "a" || userSection === "A")) {
+  alert("Your class timing is 9am to 11am");
+} else if (rollNumber <= 20 && (userSection === "b" || userSection === "B")) {
+  alert("Your class timing is 11am to 1pm");
+} else {
+  alert("enter valid section");
+}
