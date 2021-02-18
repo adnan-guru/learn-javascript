@@ -47,3 +47,57 @@ var newNumber = num.toFixed();
 console.log("newNumber",newNumber);
 var newNumber = num.toFixed(4);
 console.log("newNumber",newNumber);
+
+/slice method
+var char = "world hello world";
+var sliceMethod = char.slice(0, 2);
+console.log("sliceMethod", sliceMethod);
+console.log("sliceMethod", sliceMethod.toUpperCase());
+
+//indexOf method
+var indexOfMethod = char.indexOf("d");
+console.log("indexOfMethod", indexOfMethod);
+
+var indexOfMethod = char.lastIndexOf("d");
+console.log("lastIndexOfMethod", indexOfMethod);
+
+var indexOfMethod = char.indexOf("t");
+console.log("indexOfMethod if character not exit it return >", indexOfMethod);
+
+//charAt method
+var charAt = char.charAt(5);
+console.log("char At method", charAt);
+
+//replace method
+var replace = char.replace("world", "hello");
+console.log("local replace", replace);
+
+var replace = char.replace(/world/g, "hello");
+console.log("global replace", replace);
+
+
+var someString = prompt("Enter user name").toLocaleLowerCase();
+var match = someString.match("adnan");
+var match2 = someString.match("ali");
+
+
+if (match) {
+  alert(`welcome ${someString.toUpperCase()} to this page`);
+} else if(match2) {
+    alert(`welcome ${someString.toUpperCase()} to this page`);
+}
+else {
+  alert("enter valid user name");
+}
+
+//check type method
+
+var char =parseInt(prompt("enter character"));
+console.log("check type",typeof(char));
+
+var num=1234;
+var result1=num+1;
+console.log("num",result1);
+var convertString=num.toString();
+var result2= convertString+1;
+console.log("convertString",result2);
