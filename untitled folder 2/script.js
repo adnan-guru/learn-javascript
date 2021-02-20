@@ -115,7 +115,6 @@
 // var ceilMethod=Math.ceil(multiply);
 // console.log("ceilMethod",ceilMethod);
 
-
 // var number = "30.5555";
 // console.log("number",number);
 
@@ -131,3 +130,76 @@
 // //30.55
 // var fixed=convertNumber.toFixed(2);
 // console.log("fixed define lenth",fixed);
+
+// var getCurrentDate = new Date();
+// console.log("getCurrentDate >> ",getCurrentDate);
+
+// var getDay= getCurrentDate.getDay();
+// console.log("getDay >>",getDay);
+
+// var getMonth = getCurrentDate.getMonth();
+// console.log("getMonth >>",getMonth);
+
+// var getSecounds = getCurrentDate.getSeconds()
+// console.log("getSecounds >>",getSecounds);
+
+// var getMillionSecound = getCurrentDate.getUTCMilliseconds();
+// console.log("getMillionSecound >>",getMillionSecound);
+
+// var getTime = getCurrentDate.getTime();
+// console.log("getTime >>",getTime);
+
+// var nums = [1,2,3,4,5,6,7,8,9,10];
+// var total = 0;
+// for(var i=0; i < nums.length; i++){
+//     total = total +(nums[i]);
+// }
+// alert(total);
+
+// var numbers=[9,8,7,6,5,"usman","adnan",3,2,1]
+// var index=numbers.indexOf("adnan")
+// console.log("index",index);
+
+// var newArray=numbers.splice(2,1,8)
+// console.log("numbers",numbers);
+
+// var sortNumbers=numbers.sort();
+// console.log("sortNumbers",sortNumbers);
+
+var studentData = [
+  {
+    fullName: "Adnan",
+    fatherName: "Shabbir",
+    class: "10th",
+    rollNumber: "123",
+    section: "b",
+  },
+  {
+    fullName: "Ali",
+    fatherName: "waqar",
+    class: "10th",
+    rollNumber: "124",
+    section: "b",
+  },
+  {
+    fullName: "Maneer",
+    fatherName: "Sageer",
+    class: "10th",
+    rollNumber: "125",
+    section: "b",
+  },
+];
+
+var data3 =  {
+  fullName: "Maneer",
+  fatherName: "Sageer",
+  class: "10th",
+  rollNumber: "125",
+  section: "b",
+},
+
+ update=studentData.splice(0,1,data3)
+ var deleteObject=studentData.splice(0,1)
+
+console.log("all object",studentData);
+console.log("aftter",deleteObject);

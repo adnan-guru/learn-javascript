@@ -12,7 +12,7 @@
 // }
 // if (flage) {
 //     console.log("success! 5 is exit in array");
-  
+
 // }
 
 // //while loop
@@ -49,3 +49,12 @@
 // array.forEach(numbers => {
 //   console.log("for each nummbers array",numbers);
 // });
+
+//var nums = [1,2,3,4,5,6,7,8,9,10];
+
+
+// var total = 0;
+// for (var i = 1; i <= 10; i++) {
+//   total = total + i;
+// }
+// alert(total);
